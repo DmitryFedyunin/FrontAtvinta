@@ -2,5 +2,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Тестовое задание в Atvinta
 
-Сборка </br>### npm i </br>
-Запуск </br>### npm start
+Сборка </br> npm i </br>
+Запуск </br> npm start
