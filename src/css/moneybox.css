@@ -1,0 +1,70 @@
+.moneybox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.money_line {
+  /* Style for "Layer 11 c" */
+  width: 996px;
+  height: 3px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.money_box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.save_money {
+  text-shadow: 0 3px 0 rgba(0, 0, 0, 0.75);
+  color: #69829a;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 2px;
+}
+
+.coin {
+  display: flex;
+  justify-content: center;
+}
+
+.coins {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.add_one_coin {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+.quantity_coin {
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  transform: rotateY(75deg);
+}
+
+.trans {
+  transform: scaleX(-3);
+  text-align: center;
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=moneybox.css.map */

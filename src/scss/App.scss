@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500&display=swap');
+html{
+    height: 100%;
+}
+body{
+  background: rgb(2,13,24);
+  background: -moz-linear-gradient(180deg, rgba(2,13,24,1) 100%, rgba(7,72,126,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(2,13,24,1) 100%, rgba(7,72,126,1) 100%);
+  background: linear-gradient(180deg, rgba(2,13,24,1) 100%, rgba(7,72,126,1) 100%);
+}
+
+.header{
+  display:flex;
+  justify-content: center;
+}
+.header .header_text{
+  text-shadow: 0 3px 0 rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 22px;
+}
