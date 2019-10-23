@@ -41,7 +41,11 @@ class MoneyBox extends React.Component {
     }
 
     handleClick = () => {
-        this.props.changeMoney(1);
+        const {money} = this.props;
+        if (money < 100){
+            this.props.changeMoney(1);
+        }
+
     };
 
     renderItemList = (img, index) => <img className="trans" src={img} key={index} />

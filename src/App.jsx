@@ -10,9 +10,12 @@ import Production from './components/production';
 class App extends React.Component {
     state = {
         arm:0,
+        arm2:0,
         leg:0,
+        leg2:0,
+        gherkin2:0,
         gherkin:0,
-        money: 0,
+        money: 80,
     };
 
     changeMoney = (amount) => {
@@ -39,6 +42,31 @@ class App extends React.Component {
             };
         });
     };
+
+    changeArm2 = (amount) => {
+        this.setState((prevState) => {
+            return {
+                arm2: prevState.arm2 + amount,
+            };
+        });
+    };
+
+    changeLeg2 = (amount) => {
+        this.setState((prevState) => {
+            return {
+                leg2: prevState.leg2 + amount,
+            };
+        });
+    };
+
+    changeGherkin2 = (amount) => {
+        this.setState((prevState) => {
+            return {
+                gherkin2: prevState.gherkin2 + amount,
+            };
+        });
+    };
+
 
     changeLeg = (amount) => {
         this.setState((prevState) => {
@@ -84,7 +112,7 @@ class App extends React.Component {
                         <a className="text_ingredients">Ингредиенты в сумке</a>
                         <div className="ingredients_line"></div>
                     </div>
-                    <Ingredients money={this.state.money} changeMoney={this.changeMoney} leg={this.state.leg} changeLeg={this.changeLeg} arm={this.state.arm} changeArm={this.changeArm} gherkin={this.state.gherkin} changeGherkin={this.changeGherkin}/>
+                    <Ingredients arm2={this.state.arm2} changeArm2={this.changeArm2} leg2={this.state.leg2} changeLeg2={this.changeLeg2} gherkin2={this.state.gherkin2} changeGherkin2={this.changeGherkin2} money={this.state.money} changeMoney={this.changeMoney} leg={this.state.leg} changeLeg={this.changeLeg} arm={this.state.arm} changeArm={this.changeArm} gherkin={this.state.gherkin} changeGherkin={this.changeGherkin}/>
                 </section>
                 <section className="production">
                     <div className="production_box">
@@ -92,7 +120,7 @@ class App extends React.Component {
                         <a className="text_production">Производство человечка</a>
                         <div className="production_line"></div>
                     </div>
-                    <Production money={this.state.money} saleHuman={this.saleHuman} leg={this.state.leg} changeLeg={this.changeLeg} arm={this.state.arm} changeArm={this.changeArm} gherkin={this.state.gherkin} changeGherkin={this.changeGherkin} />
+                    <Production arm2={this.state.arm2} changeArm2={this.changeArm2} leg2={this.state.leg2} changeLeg2={this.changeLeg2} gherkin2={this.state.gherkin2} changeGherkin2={this.changeGherkin2}  money={this.state.money} saleHuman={this.saleHuman} leg={this.state.leg} changeLeg={this.changeLeg} arm={this.state.arm} changeArm={this.changeArm} gherkin={this.state.gherkin} changeGherkin={this.changeGherkin} />
                 </section>
             </div>
         );

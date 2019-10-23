@@ -42,7 +42,7 @@
 
 .more_production {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .sex_and_ingredients {
@@ -123,7 +123,9 @@ input[type=radio]:checked + label {
 }
 
 .make {
-  margin-top: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 250px;
 }
 
 .human {
@@ -226,15 +228,26 @@ input[type=radio]:checked + label {
 }
 
 .extraClass {
-  display: flex;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.37);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 8px;
+  color: #063761;
+  padding: 13px;
   text-align: center;
-  width: 16em;
-  font-size: 20px !important;
-  pointer-events: auto !important;
-  visibility: visible !important;
 }
-.extraClass:hover {
-  opacity: 1 !important;
+
+.modal {
+  position: absolute;
+  text-align: center;
+  background-color: rgba(43, 115, 255, 0.1);
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.modal_text {
+  color: #063761;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=production.css.map */
