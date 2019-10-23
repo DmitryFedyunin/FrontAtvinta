@@ -44,6 +44,7 @@
   line-height: 22px;
   text-align: center;
   text-decoration-line: underline;
+  cursor: pointer;
 }
 
 .quantity_coin {

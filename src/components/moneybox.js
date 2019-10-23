@@ -51,7 +51,7 @@ class MoneyBox extends React.Component {
         return (
             <div className="coins">
                 <div className="items"> {this.state.itemList.map(this.renderItemList)}</div>
-                <span className="quantity_coin"> {this.props.money} монет </span>
+                <span className="quantity_coin"> {this.props.money} монет</span>
                 <a  className="add_one_coin" onClick={this.handleClick} >Добавить одну монету</a>
             </div>
         );
